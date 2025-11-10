@@ -1,8 +1,25 @@
-# Boolean Expression Simplifier
+# KarnaughCat Boolean Expression Simplifier
 
 A small C++ command-line tool that parses, evaluates, and simplifies Boolean logic expressions.
-
-# 🔧 Features
+```bash
+#          _                        
+#          \`*-.                    
+#           )  _`-.                 
+#          .  : `. .                
+#          : _   '  \               
+#          ; *` _.   `*-._          
+#          `-.-'          `-.       
+#            ;       `       `.     
+#            :.       .        \    
+#            . \  .   :   .-'   .   
+#            '  `+.;  ;  '      :   
+#            :  '  |    ;       ;-. 
+#            ; '   : :`-:     _.`* ;
+#   [bug] .*' /  .*' ; .*`- +'  `*' 
+#         `*-*   `*-*  `*-*'
+```
+      
+## 🔧 Features
 - Parses expressions with &, |, ^, ~, !, ', and parentheses () [] {} using a recursive algorithm
 - Generates full truth tables
 - Simplifies expressions using a basic minterm combination algorithm
@@ -16,11 +33,14 @@ A small C++ command-line tool that parses, evaluates, and simplifies Boolean log
 - Detects when simplification is impractical for 6+ variables
 - Cute cat
 
-# 🧮 Example
+## 🧮 Example
 run:
+```bash
 ./KarnaughCat "(A & B & ~C) | (A & ~B & C) | (~A & B & C) | (A & B & C)"
+```
 
 output:
+```bash
 
 A B C  result
 _____________
@@ -39,22 +59,34 @@ A & B  |  A & C  |  B & C
 
 Execution time: 0.000156041 seconds
 
-# 🏗️ build
-cd into the KarnaughCat directory and run make
-this will compile using g++. Change in makefile if necessary
+```
 
-# 🏃 run
+## 🏗️ build
+cd into the KarnaughCat directory and run:
+```bash
+make
+```
+This will compile using g++. Change in makefile if necessary
+
+## 🏃 run
 on windows execute:
-KarnaughCat.exe followed by the desired logical expression in double brackets ""
-on everything else execute:
-./KarnaughCat   followed by the desired logical expression in double brackets ""
+```bash
+KarnaughCat.exe
+```
+followed by the desired logical expression in double brackets ""
+ 
+on anything else execute:
+```bash
+./KarnaughCat
+```
+followed by the desired logical expression in double brackets ""
 
 
-# 🚀 Performance
+## 🚀 Performance
 For up to 5 variables, simplification runs instantly.
 Beyond that, the algorithm becomes exponentialy slower, so I prevented it from wasting our time.
 
-# 🧠 Future Work
+## 🧠 Future Work
 - Optimize combining logic
 - Optimize truthtable logic
 - POS format and further minimisation
