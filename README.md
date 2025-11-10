@@ -1,4 +1,10 @@
-# KarnaughCat Boolean Expression Simplifier
+# 🐱 KarnaughCat — Boolean Expression Simplifier
+
+[![Language](https://img.shields.io/badge/language-C++-blue.svg)](https://en.wikipedia.org/wiki/C%2B%2B)
+[![Build](https://img.shields.io/badge/build-Makefile-brightgreen.svg)](https://www.gnu.org/software/make/)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)](#)
+[![License](https://img.shields.io/badge/license-MIT-yellow.svg)](#)
+[![Status](https://img.shields.io/badge/status-Experimental-orange.svg)](#)
 
 A small C++ command-line tool that parses, evaluates, and simplifies Boolean logic expressions.
 ```bash
