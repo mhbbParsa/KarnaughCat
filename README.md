@@ -31,7 +31,7 @@ A small C++ command-line tool that parses, evaluates, and simplifies Boolean log
   - -d  — disable combination
   - -c  — cute cat
 - Detects when simplification is impractical for 6+ variables
-- Cute cat
+- Cute ASKII cat
 
 ## 🧮 Example
 run:
@@ -62,29 +62,28 @@ Execution time: 0.000156041 seconds
 ```
 
 ## 🏗️ build
-cd into the KarnaughCat directory and run:
 ```bash
+cd KarnaughCat
 make
 ```
 This will compile using g++. Change in makefile if necessary
 
 ## 🏃 run
-on windows execute:
+windows:
 ```bash
-KarnaughCat.exe
+KarnaughCat.exe "<expression>"
 ```
-followed by the desired logical expression in double brackets ""
  
-on anything else execute:
+Linux/MacOS:
 ```bash
-./KarnaughCat
+./KarnaughCat "<expression>"
 ```
-followed by the desired logical expression in double brackets ""
+Replace <expression> with your Boolean expression in double quotes.
 
 
 ## 🚀 Performance
-For up to 5 variables, simplification runs instantly.
-Beyond that, the algorithm becomes exponentialy slower, so I prevented it from wasting our time.
+- For up to 5 variables, simplification runs instantly.
+- Beyond that, the algorithm becomes exponentialy slower, so I prevented it from wasting our time.
 
 ## 🧠 Future Work
 - Optimize combining logic
